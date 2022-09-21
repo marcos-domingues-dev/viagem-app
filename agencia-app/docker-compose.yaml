@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  openjdk:
+    build: 
+      context: ./appnode
+      dockerfile: Dockerfile.jdk
+    image: mdominguesdev/openjdk
+    container_name: appnode1
+    volumes:
+      - ./:/usr/src/myapp
